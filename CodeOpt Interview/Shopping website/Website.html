@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shopping Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script src="main.js" type="module" defer></script>
+    </head>
+<body>
+
+ <div class="header">
+      <div class="container">
+            <div class="navbar">
+     <div class="logo">
+      <img src="data:image/png;base64,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" width="70px">
+    </div>
+<nav>
+    <ul>
+     <li><a href="Website.html">Home</a></li>
+     <li><a href="#">Products</a></li>
+     <li><a href="#">Contact</a></li>
+     <li><a href="#">About</a></li>
+     <li><a href="#" onclick="event.preventDefault(); auth.handleAccountClick()">Account</a></li>
+     </ul>
+</nav>
+            </div>
+                        <button class="cart-btn" aria-label="Cart" onclick="cart.openModal()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <circle cx="9" cy="21" r="1"></circle>
+                                    <circle cx="20" cy="21" r="1"></circle>
+                                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                                </svg>
+                                <span class="cart-count" id="cart-count">0</span>
+                        </button>
+    </div>
+    <div class="row">
+        <div class="col-2">
+        <h1>Get Yor Premium <br> Essentials!</h1>
+        <P>Get your essentials at the best price. We have a wide range of products to choose from.<br> Shop now and get the best deals!</P>
+            <a href=""class="btn">Shop Now &#8594;</a>
+        </div>
+    <div class="col-2">
+            <img src="https://www.pngall.com/wp-content/uploads/14/Foodstuff-PNG-Pic.png" width="100%">
+        </div>
+    </div>
+</div>
+<!-- Featured categories -->
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <!-- Products will be loaded from backend -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>Shopping Cart</h2>
+                <span class="close-btn" onclick="cart.closeModal()">&times;</span>
+            </div>
+            <div id="cart-items-container" class="cart-items-container">
+                <!-- Cart items will be displayed here -->
+            </div>
+            <div class="cart-footer">
+                <p>Total Items: <span id="total-items">0</span></p>
+                <p>Total Price: $<span id="total-price">0.00</span></p>
+                <button class="btn" onclick="cart.closeModal()">Continue Shopping</button>
+                <button class="btn" onclick="cart.checkout()" style="background-color: #ff523b;">Checkout</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Orders Modal -->
+    <div id="orders-modal" class="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>📦 Order History</h2>
+                <span class="close-btn" onclick="orders.closeModal()">&times;</span>
+            </div>
+            <div id="orders-container" class="cart-items-container">
+                <!-- Orders will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div id="payment-modal" class="cart-modal">
+        <div class="cart-content" style="max-width: 400px;">
+            <div class="cart-header">
+                <h2>💳 Payment</h2>
+                <span class="close-btn" onclick="payment.closePaymentForm()">&times;</span>
+            </div>
+            <div style="padding: 20px;">
+                <p style="font-size: 18px; margin-bottom: 20px;">Amount: <strong>$<span id="payment-amount">0.00</span></strong></p>
+                
+                <input type="text" id="card-name" placeholder="Cardholder Name" style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px;">
+                <input type="text" id="card-number" placeholder="Card Number" maxlength="19" oninput="payment.validateCard(event)" style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px;">
+                
+                <div style="display: flex; gap: 10px; margin-bottom: 10px;">
+                    <input type="text" id="expiry-date" placeholder="MM/YY" maxlength="5" style="flex: 1; padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
+                    <input type="text" id="cvv" placeholder="CVV" maxlength="3" style="flex: 1; padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                
+                <button class="btn" onclick="payment.processPayment()" style="width: 100%; background-color: #27ae60; margin-bottom: 10px;">Pay Now</button>
+                <button class="btn" onclick="payment.closePaymentForm()" style="width: 100%; background-color: #95a5a6;">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Modal -->
+    <div id="admin-modal" class="cart-modal">
+        <div class="cart-content" style="max-width: 100%; max-height: 90vh; overflow-y: auto;">
+            <div class="cart-header">
+                <h2>⚙️ Admin Panel</h2>
+                <span class="close-btn" onclick="admin.closePanel()">&times;</span>
+            </div>
+            <div id="admin-content" style="padding: 20px;">
+                <!-- Admin content will be loaded here -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-4">
+                    <h3>Download Our App</h3>
+                    <p>Download our app for the best shopping experience.</p>
+                </div>
+                <div class="col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Youtube</a></li>
+                    </ul>
+                    <p>Follow us on social media for updates and offers.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
